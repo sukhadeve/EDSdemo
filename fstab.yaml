@@ -1,5 +1,5 @@
 mountpoints:
  /:
- url: "https://https://author-p138853-e1404402.adobeaemcloud.com/bin/franklin.delivery/sukhadeve/EDSdemo/new/main"
+ url: "https://https://author-p138853-e1404402.adobeaemcloud.com/bin/franklin.delivery/sukhadeve/EDSdemo/main"
   type: "markup"
   suffix: ".html"
