@@ -12,7 +12,7 @@ mountpoints:
 >>>>>>> ed8559c (Added fstab.yaml file)
 =======
  /:
- url: "https://https://author-p138853-e1404402.adobeaemcloud.com/bin/franklin.delivery/sukhadeve/EDSdemo/new/main"
+ url: "https://https://author-p138853-e1404402.adobeaemcloud.com/bin/franklin.delivery/sukhadeve/EDSdemo/main"
   type: "markup"
   suffix: ".html"
 >>>>>>> 27246d2 (Create fstab.yaml)
