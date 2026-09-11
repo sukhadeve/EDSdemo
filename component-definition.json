@@ -684,6 +684,22 @@
               }
             }
           }
+        },
+        {
+          "title": "Imagecustomcomponent",
+          "id": "imagecustomcomponent",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/image/v1/image",
+                "template": {
+                  "jcr:title": "Imagecustomcomponent",
+                  "fieldType": "image",
+                  "fd:viewType": "imagecustomcomponent"
+                }
+              }
+            }
+          }
         }
       ]
     }
