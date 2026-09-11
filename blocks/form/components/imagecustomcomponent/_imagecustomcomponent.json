@@ -37,10 +37,10 @@
         {
           "component": "reference",
           "valueType": "string",
-          "name": "fileReference",
-          "label": "Image",
+          "name": "images",
+          "label": "Images",
           "multi": true,
-          "max" : 5
+          "max": 5
         },
         {
           "component": "text",
