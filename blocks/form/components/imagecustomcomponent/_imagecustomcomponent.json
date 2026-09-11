@@ -39,7 +39,8 @@
           "valueType": "string",
           "name": "fileReference",
           "label": "Image",
-          "multi": false
+          "multi": true,
+          "max" : 5
         },
         {
           "component": "text",
