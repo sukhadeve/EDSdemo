@@ -1,3 +1,18 @@
 /* Imagecustomcomponent component styles */
 
-/* Add your custom styles here */
+.image-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.image-group-item {
+  flex: 0 0 auto;
+}
+
+.image-group-item picture,
+.image-group-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
