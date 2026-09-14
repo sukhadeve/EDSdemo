@@ -315,6 +315,11 @@ function enableValidation(form) {
     });
   });
 
+  form.addEventListener('change', (event) => {
+    checkValidation(event.target);
+  });
+}
+
 function enableLiveValidation(form) {
   let debounce;
   form.addEventListener('input', (event) => {
@@ -332,11 +337,6 @@ function enableLiveValidation(form) {
     debounce = setTimeout(() => {
       el.dispatchEvent(new Event('change', { bubbles: true }));
     }, 200);
-  });
-}
-
-  form.addEventListener('change', (event) => {
-    checkValidation(event.target);
   });
 }
 
