@@ -315,6 +315,26 @@ function enableValidation(form) {
     });
   });
 
+function enableLiveValidation(form) {
+  let debounce;
+  form.addEventListener('input', (event) => {
+    const el = event.target;
+    if (!el.matches('input, textarea, select')) return;
+
+    // Skip inputs that already re-validate correctly on their own:
+    // - radio/checkbox/file fire `change` on click/select
+    // - formatted fields (date/number with display-value) swap type on blur
+    if (['radio', 'checkbox', 'file'].includes(el.type)) return;
+    if (el.hasAttribute('display-value')) return;
+
+    // Debounce so the model/rule engine doesn't re-run on every keystroke
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+    }, 200);
+  });
+}
+
   form.addEventListener('change', (event) => {
     checkValidation(event.target);
   });
@@ -385,6 +405,7 @@ export async function createForm(formDef, data, source = 'aem') {
   form.addEventListener('submit', (e) => {
     handleSubmit(e, form, captcha);
   });
+  enableLiveValidation(form);
 
   return {
     form,
