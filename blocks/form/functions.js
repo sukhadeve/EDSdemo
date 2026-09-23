@@ -44,7 +44,7 @@ function days(endDate, startDate) {
 
 /**
  * Calculate a person's age in completed years from their date of birth.
- * @name calculateAge Age in years from date of birth
+ * @name calculateAge Agecustomcomponent
  * @param {string} dateOfBirth The date of birth (ISO string, e.g. yyyy-mm-dd).
  * @return {number} The age in completed years, or 0 for an invalid date.
  */
