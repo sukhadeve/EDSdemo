@@ -3,6 +3,7 @@ mountpoints:
   /:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xwalk/main"
     type: "markup"
     suffix: ".html"
@@ -19,6 +20,9 @@ mountpoints:
 >>>>>>> 27246d2 (Create fstab.yaml)
 =======
   url: "https://author-p138853-e1404402.adobeaemcloud.com/bin/franklin.delivery/sukhadeve/EDSdemo/multi-image-custom-component"
+=======
+  url: "https://author-p138853-e1404402.adobeaemcloud.com/bin/franklin.delivery/sukhadeve/EDSdemo/main"
+>>>>>>> 65f2d2e (Update fstab.yaml)
     type: "markup"
     suffix: ".html"
 >>>>>>> a8b5b76 (Update fstab.yaml)
