@@ -5,22 +5,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-<<<<<<< HEAD
-    - uses: actions/checkout@v6
-    - name: Use Node.js 20
-      uses: actions/setup-node@v6
-      with:
-        node-version: 24
-=======
     - uses: actions/checkout@v4
     - name: Use Node.js 24
       uses: actions/setup-node@v4
       with:
-<<<<<<< HEAD
-        node-version: 20
->>>>>>> 520bfec (Initial commit)
-=======
         node-version: 24
->>>>>>> 8fa2248 (CI: build on Node 24 to match local npm/lockfile)
     - run: npm ci
     - run: npm run lint
